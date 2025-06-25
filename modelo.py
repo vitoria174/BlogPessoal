@@ -2,7 +2,7 @@ import os
 import json
 import datetime
 
-arquivo_json = "arquivo.json" #arquivo json que sera criado
+arquivo_json = "dados/arquivo.json" #arquivo json que sera criado
 
 #classe onde o administrador criar, atualizara e deletarar os artigos.
 class Artigo():
@@ -63,3 +63,5 @@ class Artigo():
                        del self.dados[indice]
                        self.save()
                         
+a = Artigo()
+a.create()
