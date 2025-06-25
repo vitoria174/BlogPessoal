@@ -63,11 +63,3 @@ class Artigo():
                        del self.dados[indice]
                        self.save()
                         
-a = Artigo()
-a.load()
-a.create()
-a.create()
-a.read()
-a.update()
-a.read()
-a.delete()
