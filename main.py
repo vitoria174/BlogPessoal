@@ -1,17 +1,13 @@
-import json
+from flask import Flask, render_template
+from classes.usuario import Usuario
 
-class Usuario:
-      def __init__(self, caminho_json):
-            self.caminho_json = caminho_json
-      
-      def open(self):
-            with open(self.caminho_json,'r') as file:
-                  dados = json.load(file)
-                  return dados
-                  
-      def read_all(self):
-            artigos = self.open()
-            for artigos in artigos:
-                  print(artigos)
-                  
-a=Usuario('arquivo.json')
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+      artigo = Usuario()
+      return render_template('home.html',titulo = 'Blog Pessoal', lista_artigos = artigo.read_all())
+
+
+app.run(debug=True)

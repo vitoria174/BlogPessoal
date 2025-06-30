@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <h1>{{titulo}}</h1>
+
+
+      {%for artigo in lista_artigos%}
+          <a href='#'>  {{artigo.Titulo}}</a><br>
+            {{artigo.Descricao}}<br>
+            {{artigo.Data}}
+      {%endfor%}
+    
+  </body>
+</html>
