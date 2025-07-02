@@ -65,3 +65,5 @@ class Artigo():
                         
 a = Artigo()
 a.create()
+a.create()
+a.create()

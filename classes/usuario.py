@@ -12,11 +12,19 @@ class Usuario:
       def read_all(self):
             return self.open()
       
-      def read_id(self):
+      def read_id(self,id):
             artigos = self.open()
-            artigo_id = int(input('Id do artigo: '))
+            lista =[]
             
-            for indice_artigo, chave_artigo in enumerate(artigos):
-                  if chave_artigo['id'] == artigo_id:
-                        return chave_artigo
-                  
+            for a in  artigos:
+                  if a['id'] == id:
+                        titulo = a['Titulo']
+                        descricao = a['Descricao']
+                        data_criada = a['Data']
+                        dict ={
+                              'titulo':titulo,
+                              'descricao':descricao,
+                              'data':data_criada
+                        }
+                        lista.append(dict)
+                        return lista

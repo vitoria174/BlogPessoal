@@ -8,12 +8,11 @@
   <body>
     <h1>{{titulo}}</h1>
 
-
-      {%for artigo in lista_artigos%}
-            <a href ="{{url_for('read_id',id = artigo['id'])}}">{{artigo['Titulo']}}</a><br>
-            {{artigo.Descricao}}<br>
-            
-      {%endfor%}
+    {%for i in postagem%}
+      {{i.titulo}}<br>
+      {{i.descricao}}<br>
+      {{i.data}}
+    {%endfor%}
     
   </body>
 </html>
