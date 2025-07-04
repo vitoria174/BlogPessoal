@@ -18,6 +18,11 @@ class Artigo():
             else:
                   self.dados = []
                   self.save()
+                  
+      def open(self):
+            with open(self.caminho_json,'r') as file:
+                  dados = json.load(file)
+                  return dados
       
       #metodo para salvar artigos no json
       def save(self):
@@ -25,9 +30,7 @@ class Artigo():
                   json.dump(self.dados, file, indent=4)
       
       #Função para criar artigos          
-      def create(self):
-            titulo = str(input('Titulo: '))
-            descricao = str(input('Descricao: '))
+      def create(self,titulo,descricao):
             
             dado = {
                   'id':len(self.dados)+1,
@@ -41,8 +44,11 @@ class Artigo():
       
       #Leitura dos artigos  
       def read(self):
-            for i in self.dados:
-                  print(i)
+        try:
+            with open(self.artigo, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            return []
                   
       #metodo de atualizacao dos artigos
       def update(self):
@@ -63,7 +69,3 @@ class Artigo():
                        del self.dados[indice]
                        self.save()
                         
-a = Artigo()
-a.create()
-a.create()
-a.create()

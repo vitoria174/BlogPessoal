@@ -7,7 +7,13 @@
   </head>
   <body>
       <h1>{{titulo}}</h1>
-      <a href="{{url_for('add')}}">+Add</a>
+      
+      <a href="{{url_for('new')}}">add</a>
+
+      {%for i in ler%}
+          {{i.Titulo}}<br>
+          {{i.Descricao}}<br>
+      {%endfor%}
 
 
 
