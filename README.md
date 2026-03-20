@@ -1,4 +1,5 @@
 🚀 📘 Descrição para GitHub (README)
+
 📌 Sobre o projeto
 
 Aplicação backend de um blog pessoal desenvolvida com foco em práticas de desenvolvimento de APIs REST. O sistema permite o gerenciamento de usuários e publicações, possibilitando criar, visualizar, atualizar e deletar conteúdos.
