@@ -1,26 +1,44 @@
-**BLOG PESSOAL**
+🚀 📘 Descrição para GitHub (README)
+📌 Sobre o projeto
 
-<sub>VISAO GERAL</sub>
+Aplicação backend de um blog pessoal desenvolvida com foco em práticas de desenvolvimento de APIs REST. O sistema permite o gerenciamento de usuários e publicações, possibilitando criar, visualizar, atualizar e deletar conteúdos.
 
-Criar um blog pessoal onde possa escrever e publicar 
-artigos. O blog terá duas seções: uma seção para convidados e uma seção para administradores.
+⚙️ Funcionalidades
 
-<sub>SEÇÕES</sub>
-<hr>
-<sub>SEÇÃO DE CONVIDADOS:</sub>
+Cadastro e gerenciamento de usuários
 
-  <ins>º Página inicial:</ins> Esta página exibirá a lista de   artigos publicados no blog.\
-  
-  <ins>º Página do artigo:</ins> esta página exibirá o conteúdo do artigo junto com a data de publicação.
+Criação, edição e exclusão de posts
 
-<sub>SEÇÃO DE ADMINISTRAÇÃO:</sub>
+Listagem de conteúdos
 
-  <ins>º Painel:</ins> página exibirá a lista de artigos publicados no blog, com a opção de adicionar um novo artigo, editar um artigo existente ou excluir um artigo.
+Estrutura de API REST com endpoints organizados
 
-  <ins>º Adicionar página de artigo:</ins> esta página conterá um formulário para adicionar um novo artigo. 
+Manipulação de dados com persistência em banco
 
-  <ins>º Página de edição do artigo:</ins> esta página conterá um formulário para editar um artigo existente.
+🧱 Arquitetura
 
-<ins>º Autenticação básica:</ins> protege o acesso do administrador com um mecanismo de login simples.
+O projeto foi estruturado seguindo uma organização em camadas, separando responsabilidades como:
 
-<ins>º Armazenamento baseado em arquivo:</ins> os artigos são armazenados como arquivos JSON no sistema de arquivos.
+Rotas (endpoints)
+
+Lógica de negócio
+
+Acesso a dados
+
+Essa abordagem melhora a manutenção e escalabilidade da aplicação.
+
+🚀 Tecnologias utilizadas
+
+Python
+
+Flask
+
+PostgreSQL
+
+SQL
+
+Git
+
+🎯 Objetivo
+
+Este projeto foi desenvolvido com o objetivo de praticar a construção de aplicações backend completas, incluindo criação de APIs, integração com banco de dados e aplicação de boas práticas de desenvolvimento.
